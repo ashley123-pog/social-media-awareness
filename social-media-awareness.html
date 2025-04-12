@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();  // Prevents form from submitting
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Log the values to the console
+            console.log("Username: " + username);
+            console.log("Password: " + password);
+
+            // You can also display a message
+            alert("Form submitted! Check the console for results.");
+        }
+    </script>
+</head>
+<body>
+    <h2>Login to Your Account</h2>
+    <form onsubmit="handleSubmit(event)">
+        Username: <input type="text" id="username" name="username"><br><br>
+        Password: <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
